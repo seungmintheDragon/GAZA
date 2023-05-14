@@ -1,0 +1,69 @@
+# 설정 정보
+
+## 백엔드 도커 파일 
+
+```
+FROM openjdk:11-jre-slim
+ARG JAR_FILE=gaza-0.0.1-SNAPSHOT.jar
+COPY ${JAR_FILE} myboot.jar
+ENTRYPOINT ["java","-jar","/myboot.jar"]
+
+```
+
+## nginx 설정 파일
+
+sites-available 위치에 ssafy.conf 파일 생성후 아래 명령어 실행<br>
+
+```
+sudo ln -s /etc/nginx/sites-available/ssafy.conf /etc/nginx/sites-enabled/ssafy.conf
+```
+
+```
+    server {
+            location /{
+                    proxy_pass http://localhost:3000;
+            }
+            location /ws-stomp/ {
+                    proxy_pass     http://localhost:8080/ws-stomp/;
+                    proxy_http_version      1.1;
+                    proxy_set_header       Upgrade $http_upgrade;
+                    proxy_set_header       Connection "upgrade";
+                    proxy_set_header Host $host;
+            }
+            location /api/ {
+                proxy_pass http://localhost:8080/;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header X-Forwarded-Proto $scheme;
+            }
+            location /openvidu-api/ {
+                proxy_pass http://localhost:5443/openvidu/;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header X-Forwarded-Proto $scheme;
+            }
+
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/i8c207.p.ssafy.io/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/i8c207.p.ssafy.io/privkey.pem; # managed by Certbot
+    # include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    # ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+    }
+
+    server {
+        if ($host = i8c207.p.ssafy.io) {
+            return 301 https://$host$request_uri;
+        } # managed by Certbot
+
+        listen 80;
+        server_name i8c207.p.ssafy.io;
+    return 404; # managed by Certbot
+    }
+```
+
+## 프론트 엔드 빌드
+frontend 폴더안 Dockerfile
+
+

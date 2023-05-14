@@ -1,0 +1,90 @@
+{
+  "review": [
+    {
+      "reservation_id": "choijisung",
+      "created_date": "2023-11-23",
+      "score": 4,
+      "content": "it was very great"
+    },
+    {
+      "reservation_id": "doji",
+      "created_date": "2023-01-23",
+      "score": 4,
+      "content": "good"
+    },
+    {
+      "reservation_id": "kim",
+      "created_date": "2023-02-23",
+      "score": 4,
+      "content": "No~~t"
+    },
+    {
+      "reservation_id": "choi",
+      "created_date": "2022-05-23",
+      "score": 4,
+      "content": "Great"
+    },
+    {
+      "reservation_id": "jaehun",
+      "created_date": "2021-05-23",
+      "score": 3,
+      "content": "Sad"
+    },
+    {
+      "reservation_id": "gong",
+      "created_date": "2022-03-23",
+      "score": 5,
+      "content": "very Good"
+    }
+  ],
+  "reservation":[
+    {
+      "guide_id": "jisun choi",
+      "number_of_people":4,
+      "travel_start_date":"2023-12-01",
+      "with_children" :2,
+      "with_disabled" :0,
+      "with_elderly" :2,
+      "note" : "맛집에 진심인 사람 많아요"
+
+
+    },
+    {
+      "guide_id": "doyeon Lee",
+      "number_of_people":3,
+      "travel_start_date":"2022-10-01",
+      "with_children" :0,
+      "with_disabled" :1,
+      "with_elderly" :0,
+      "note" : "피곤합니다."
+
+
+    },
+    {
+      "guide_id": "seongmin yong",
+      "number_of_people":0,
+      "travel_start_date":"2023-12-01",
+      "with_children" :0,
+      "with_disabled" :0,
+      "with_elderly" :3,
+      "note" : "쉬고싶어요"
+
+
+    },
+    {
+      "guide_id": "JaeHun Lee",
+      "number_of_people":1,
+      "travel_start_date":"2023-02-01",
+      "with_children" :4,
+      "with_disabled" :1,
+      "with_elderly" :2,
+      "note" : "진심이군요"
+
+
+    }
+
+
+
+
+  ]
+}
