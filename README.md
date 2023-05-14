@@ -49,7 +49,7 @@ Redis 7.0.8<br>
 
 
 ## 서비스 아키텍처
-![가자_아키텍처_구성도](/uploads/b0907f1b80d6da178d6a4d2729180591/아키텍처_구성도.png)
+![가자_아키텍처_구성도](/upload/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98_%EA%B5%AC%EC%84%B1%EB%8F%84.png)
 
 
 
@@ -72,39 +72,39 @@ Redis 7.0.8<br>
 
 ### 메인 페이지
 
-![01_메인페이지_UI](/uploads/82c60850b0567c267452cad3e9426ac4/01_메인페이지_UI.PNG)
+![01_메인페이지_UI](/upload/01_메인페이지_UI.PNG)
 
 
 
 ### 가이드 상세 페이지
 
-![02_가이드상세페이지_UI](/uploads/33614c2dcbf8591cc9f5c731e4ff3826/02_가이드상세페이지_UI.PNG)
+![02_가이드상세페이지_UI](/upload/02_가이드상세페이지_UI.PNG)
 
 
 
 
 ### 예약 페이지
 
-![03_예약페이지UI](/uploads/a8a72be3ef575c06c94b2b11f5fc7007/03_예약페이지UI.PNG)
+![03_예약페이지UI](/upload/03_예약페이지UI.PNG)
 
 
 
 
 ### 사용자 예약 내역 확인
 
-![06_사용자_예약내역확인_UI](/uploads/9b2dc38ae4e57a17959ba8185bb7ac9c/06_사용자_예약내역확인_UI.PNG)
+![06_사용자_예약내역확인_UI](/upload/06_사용자_예약내역확인_UI.PNG)
 
 
 
 ### 상담 화면 
 
-![화상상담_캡쳐](/uploads/fd4270b0897d5d1e97d40ceec5aaa126/화상상담_캡쳐.PNG)
+![화상상담_캡쳐](/upload/화상상담_캡쳐.PNG)
 
 
 
 ### 상담 완료 후 
 
-![상담완료후_UI](/uploads/899e5d71624b2caccdd3108fea990b54/상담완료후_UI.PNG)
+![상담완료후_UI](/upload/상담완료후_UI.PNG)
 
 
 
